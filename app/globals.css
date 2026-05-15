@@ -12,12 +12,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.icon-hover{
+  @apply  p-2 rounded-md hover:bg-gray-100 cursor-pointer
+}
+
+.btn-anim {
+  @apply active:scale-95 hover:scale-105 transition-all ease-in cursor-pointer;
+}
+
+
 
 body {
   background: var(--background);
