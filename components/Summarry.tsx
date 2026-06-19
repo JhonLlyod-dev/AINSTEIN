@@ -65,8 +65,9 @@ export default function Summary({ summary }: any) {
           {/* TTS controls inside header */}
           {!hasAudio ? (
             <button
+              title="Only available for Development"
               onClick={playTTS}
-              disabled={load}
+              disabled={true} // Disable the button becuase this is just for testing
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-100 text-blue-600 text-xs font-extrabold hover:bg-blue-100 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed btn-anim"
             >
               {load ? (
