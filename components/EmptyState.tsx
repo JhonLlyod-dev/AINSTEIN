@@ -125,7 +125,7 @@ export default function NewNote({ AddNote }: any) {
             {/* Upload button */}
             <label
               htmlFor="file-upload"
-              className="w-full py-4 rounded-xl bg-blue-500 hover:bg-blue-600 border-b-4 border-blue-800 text-white font-extrabold text-sm flex items-center justify-center gap-2 cursor-pointer active:scale-95 transition-all btn-anim"
+              className="w-full py-4 rounded-xl bg-blue-500 hover:bg-bluex-600 border-b-4 border-blue-800 text-white font-extrabold text-sm flex items-center justify-center gap-2 cursor-pointer active:scale-95 transition-all btn-anim"
             >
               <Upload size={18} strokeWidth={3} />
               Upload File
